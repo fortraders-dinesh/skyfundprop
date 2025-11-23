@@ -3,199 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sky Fund Prop</title>
+    <title>SKY FUND PROP</title>
 
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #0a0f24;
-            color: #fff;
+            background: #0d0f26;
+            color: white;
+            text-align: center;
         }
 
         header {
-            background: #0e1835;
-            padding: 15px 25px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            box-shadow: 0px 2px 10px #0005;
+            padding: 20px;
+            background: #131637;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
         }
 
         header img {
-            height: 55px;
+            height: 70px;
         }
 
-        header h2 {
-            margin: 0;
-            color: #4da6ff;
-            font-weight: 700;
-        }
-
-        section {
-            padding: 40px 20px;
-        }
-
-        h2 {
-            text-align: center;
-            color: #4da6ff;
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
-
-        .account-container {
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .plan-box {
-            background: #121b3b;
-            padding: 22px;
-            margin: 15px 0;
-            border-radius: 12px;
-            border: 1px solid #233269;
-        }
-
-        .plan-box h3 {
-            margin: 0 0 10px 0;
-            color: #4da6ff;
-        }
-
-        .price {
-            font-size: 26px;
-            color: #4da6ff;
-            font-weight: bold;
-        }
-
-        .buy-btn {
-            margin-top: 12px;
-            padding: 12px 18px;
-            background: #4da6ff;
-            border: none;
-            border-radius: 8px;
-            font-size: 17px;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        .buy-btn:hover {
-            background: #357ad8;
-        }
-
-        footer {
-            background: #0e1835;
-            padding: 20px;
-            text-align: center;
-            color: #6d88c9;
-            margin-top: 40px;
-        }
-
-        .wallet-box {
-            background: #111a38;
-            padding: 20px;
-            margin-top: 25px;
-            border-radius: 10px;
-            border: 1px solid #24417a;
-        }
-
-        .wallet-text {
-            word-wrap: break-word;
-            color: #4da6ff;
-            font-size: 18px;
-        }
-
-        .qr-img {
-            width: 170px;
+        h1 {
             margin-top: 15px;
+            font-size: 32px;
+            letter-spacing: 2px;
+        }
+
+        .section {
+            margin: 40px auto;
+            max-width: 900px;
+            background: #161a3d;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table th, table td {
+            padding: 12px;
+            border: 1px solid #3b3f60;
+        }
+
+        table th {
+            background: #20244f;
+        }
+
+        .pay-box {
+            margin-top: 25px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #1f234d;
+        }
+
+        img.qr {
+            width: 180px;
+            margin-top: 10px;
             border-radius: 10px;
         }
+
     </style>
 </head>
-
 <body>
 
 <header>
-    <img src="uploads/logo.png" alt="logo">
-    <h2>Sky Fund Prop</h2>
+    <img src="logo.png" alt="Logo">
+    <h1>SKY FUND PROP</h1>
 </header>
 
-<section>
+
+<!-- 1 STEP ACCOUNTS -->
+<div class="section">
     <h2>1-Step Funded Accounts</h2>
-    <div class="account-container">
+    <table>
+        <tr>
+            <th>Account Size</th>
+            <th>Price (USD)</th>
+        </tr>
+        <tr><td>$5,000</td><td>$8</td></tr>
+        <tr><td>$10,000</td><td>$16</td></tr>
+    </table>
+</div>
 
-        <div class="plan-box">
-            <h3>$5,000 Account</h3>
-            <p class="price">$8</p>
-            <button class="buy-btn">Buy Now</button>
-        </div>
 
-        <div class="plan-box">
-            <h3>$10,000 Account</h3>
-            <p class="price">$16</p>
-            <button class="buy-btn">Buy Now</button>
-        </div>
-
-    </div>
-</section>
-
-<section>
+<!-- 2 STEP ACCOUNTS -->
+<div class="section">
     <h2>2-Step Funded Accounts</h2>
-    <div class="account-container">
+    <table>
+        <tr>
+            <th>Account Size</th>
+            <th>Price (USD)</th>
+        </tr>
+        <tr><td>$5,000</td><td>$6</td></tr>
+        <tr><td>$10,000</td><td>$12</td></tr>
+    </table>
+</div>
 
-        <div class="plan-box">
-            <h3>$5,000 Account</h3>
-            <p class="price">$6</p>
-            <button class="buy-btn">Buy Now</button>
-        </div>
 
-        <div class="plan-box">
-            <h3>$10,000 Account</h3>
-            <p class="price">$12</p>
-            <button class="buy-btn">Buy Now</button>
-        </div>
-
-    </div>
-</section>
-
-<section>
+<!-- INSTANT ACCOUNTS -->
+<div class="section">
     <h2>Instant Funded Accounts</h2>
-    <div class="account-container">
+    <table>
+        <tr>
+            <th>Account Size</th>
+            <th>Price (USD)</th>
+        </tr>
+        <tr><td>$5,000</td><td>$12</td></tr>
+        <tr><td>$10,000</td><td>$24</td></tr>
+    </table>
+</div>
 
-        <div class="plan-box">
-            <h3>$5,000 Account</h3>
-            <p class="price">$12</p>
-            <button class="buy-btn">Buy Now</button>
-        </div>
 
-        <div class="plan-box">
-            <h3>$10,000 Account</h3>
-            <p class="price">$24</p>
-            <button class="buy-btn">Buy Now</button>
-        </div>
+<!-- PAYMENT SECTION -->
+<div class="section">
+    <h2>Buy Account – Payment</h2>
 
-    </div>
-</section>
-
-<section>
-    <h2>Crypto Payments</h2>
-
-    <div class="wallet-box">
-        <h3 style="color:#4da6ff;">USDT (TRC20)</h3>
-        <p class="wallet-text">TW12tM2AvJt3duQUgV6AezQS47ToKixnDv</p>
-        <img src="uploads/usdt_trc20_qr.png" class="qr-img">
+    <div class="pay-box">
+        <h3>USDT (TRC20)</h3>
+        <p>Address: <b>TW12tM2AvJt3duQUgV6AezQS47ToKixnDv</b></p>
+        <img src="usdt_trc20_qr.png" class="qr">
     </div>
 
-    <div class="wallet-box">
-        <h3 style="color:#4da6ff;">ETH (ERC20)</h3>
-        <p class="wallet-text">0xe670cd917da36c63f58058958607f1d8b8849ae1</p>
-        <img src="uploads/eth_erc20_qr.png" class="qr-img">
+    <div class="pay-box">
+        <h3>ETH (ERC20)</h3>
+        <p>Address: <b>0xe670cd917da36c63f58058958607f1d8b8849ae1</b></p>
+        <img src="eth_erc20_qr.png" class="qr">
     </div>
 
-</section>
-
-<footer>
-    © 2025 Sky Fund Prop | All Rights Reserved
-</footer>
+</div>
 
 </body>
 </html>
