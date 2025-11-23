@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Contact — SKY FUND PROP</title>
+<style>
+ body{margin:0;font-family:Inter,Arial;background:#041226;color:#eaf6ff}
+ header{padding:14px 20px;background:rgba(0,0,0,0.25)}
+ .wrap{max-width:1000px;margin:30px auto;padding:24px;background:#061733;border-radius:12px}
+ label{display:block;margin-top:10px;color:#bcd7f0}
+ input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#eaf6ff}
+ button{margin-top:12px;padding:10px 14px;background:#00a8ff;border:0;color:#00122a;border-radius:8px;cursor:pointer}
+</style>
+</head><body>
+<header><div style="max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:12px"><img src="/mnt/data/9d321290-671a-4d26-84f7-e9b5a949ffa5.png" style="height:56px"/><div style="font-weight:800">SKY FUND PROP</div></div></header>
+<main class="wrap">
+  <h2>Contact Us</h2>
+  <p style="color:#bcd7f0">For support, partnership or queries, fill below:</p>
+  <label>Name</label><input id="nm" placeholder="Your name"/>
+  <label>Email</label><input id="em" placeholder="you@example.com"/>
+  <label>Message</label><textarea id="msg" rows="5"></textarea>
+  <button onclick="send()">Send Message</button>
+  <script>
+    function send(){
+      const n=document.getElementById('nm').value, e=document.getElementById('em').value, m=document.getElementById('msg').value;
+      if(!n||!e||!m){ alert('Fill all fields'); return; }
+      window.location.href='mailto:support@skyfundprop.com?subject='+encodeURIComponent('Contact from '+n)+'&body='+encodeURIComponent(m+'\\n\\nEmail: '+e);
+    }
+  </script>
+</main>
+</body></html>
